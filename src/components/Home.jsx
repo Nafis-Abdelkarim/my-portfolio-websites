@@ -1,13 +1,14 @@
 import React from "react";
 import MyImg from '../assets/my-pic-with-3D-icons.jpg'
+import Button from "./Button";
 
 
 const Home = ()=>{
 
-    const handleDownloadMyCv = () => {
-        const fileUrl = "my-protofolio-website/src/assets/Nefis Abdelkrim junior Front-End developer cv 2023.pdf";
-        window.location.href = fileUrl;
-    }
+    // const handleDownloadMyCv = () => {
+    //     const fileUrl = "my-protofolio-website/src/assets/Nefis Abdelkrim junior Front-End developer cv 2023.pdf";
+    //     window.location.href = fileUrl;
+    // }
 
     return(
         <div className="w-full flex flex-col max-w-[1240px] text-center items-center md:flex-row justify-between mx-auto text-left items-start">
@@ -17,7 +18,7 @@ const Home = ()=>{
                 <h2 className="text-[#facd00] text-3xl font-bold my-1 md:text-5xl md:text-left">Front-End <span className="text-white">Developer</span></h2>
                 <div className="mx-2">
                     <h4 className="text-white font-bold text-xl mb-6 md:text-3xl">Get my <span className="text-[#facd00]">CV !</span></h4>
-                    <a href="#" className="bg-[#facd00] px-8 py-3 rounded-full hover:bg-black hover:text-[#facd00] hover:border-2 border-yellow-500 hover:cursor-pointer mx-2" onClick={handleDownloadMyCv}>Download</a>
+                    <Button buttonText="Download"/>
                 </div>
             </div>
             <div>
